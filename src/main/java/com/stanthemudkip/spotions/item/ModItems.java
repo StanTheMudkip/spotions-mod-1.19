@@ -17,7 +17,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, SpotionsMod.MOD_ID);
 
     public static final RegistryObject<Item> BYRILL = ITEMS.register("byrill",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
