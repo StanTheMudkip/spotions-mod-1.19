@@ -1,6 +1,7 @@
 package com.stanthemudkip.spotions;
 
 import com.mojang.logging.LogUtils;
+import com.stanthemudkip.spotions.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,9 @@ public class SpotionsMod
     public SpotionsMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        //RRegister out mod Items here
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
