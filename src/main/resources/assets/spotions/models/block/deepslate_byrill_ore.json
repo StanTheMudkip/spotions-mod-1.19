@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "spotions:block/deepslate_byrill_ore"
+  }
+}
