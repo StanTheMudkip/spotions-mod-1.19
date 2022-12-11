@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D",
+    "#",
+    "O"
+  ],
+  "key": {
+    "D": {
+      "item": "spotions:byrill_dust"
+    },
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "spotions:crystal_ball"
+  }
+}

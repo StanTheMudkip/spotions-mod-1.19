@@ -1,6 +1,7 @@
 package com.stanthemudkip.spotions.item;
 
 import com.stanthemudkip.spotions.SpotionsMod;
+import com.stanthemudkip.spotions.item.custom.Crystal_Ball_Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
     public static final RegistryObject<Item> BYRILL_MORTAR_PESTLE = ITEMS.register("byrill_mortar_pestle",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+
+    //Custom Items
+    public static final RegistryObject<Item> CRYSTAL_BALL = ITEMS.register("crystal_ball",
+            () -> new Crystal_Ball_Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB)));
 
 
 

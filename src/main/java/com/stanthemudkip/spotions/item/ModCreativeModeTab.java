@@ -8,7 +8,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab SPOTIONS_TAB = new CreativeModeTab("spotionstab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModItems.BYRILL.get());
+            return new ItemStack(ModItems.CRYSTAL_BALL.get());
         }
     };
 }
