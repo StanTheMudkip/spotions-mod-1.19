@@ -1,6 +1,9 @@
 {
   "item.spotions.byrill": "Byrill Gem",
+  "item.spotions.byrill_dust": "Byrill Dust",
   "item.spotions.empty_flask": "Empty Flask",
+  "item.spotions.mortar_pestle": "Mortar and Pestle",
+  "items.spotions.byrill_mortar_pestle": "Mortar and Pestle with Byrill",
 
   "block.spotions.byrill_ore": "Byrill Ore",
   "block.spotions.deepslate_byrill_ore": "Deepslate Byrill Ore",

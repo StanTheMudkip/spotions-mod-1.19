@@ -23,7 +23,13 @@ public class ModItems {
     //MY Modded Items
     public static final RegistryObject<Item> BYRILL = ITEMS.register("byrill",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_DUST = ITEMS.register("byrill_dust",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB)));
     public static final RegistryObject<Item> EMPTY_FLASK = ITEMS.register("empty_flask",
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle",
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_MORTAR_PESTLE = ITEMS.register("byrill_mortar_pestle",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
 
 
