@@ -1,6 +1,7 @@
 package com.stanthemudkip.spotions.block;
 
 import com.stanthemudkip.spotions.SpotionsMod;
+import com.stanthemudkip.spotions.block.custom.NightShadeCropBlock;
 import com.stanthemudkip.spotions.item.ModCreativeModeTab;
 import com.stanthemudkip.spotions.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -32,6 +34,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.AMETHYST)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(5, 9)), ModCreativeModeTab.SPOTIONS_TAB);
+
+    public static final RegistryObject<Block> NIGHTSHADE_CROP = BLOCKS.register("nightshade_crop",
+            () -> new NightShadeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 

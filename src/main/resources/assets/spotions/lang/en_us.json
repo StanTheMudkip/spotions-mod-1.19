@@ -4,11 +4,14 @@
   "item.spotions.empty_flask": "Empty Flask",
   "item.spotions.mortar_pestle": "Mortar and Pestle",
   "item.spotions.byrill_mortar_pestle": "Mortar and Pestle with Byrill",
+  "item.spotions.nightshade_berry": "Nighshade Berry",
+  "item.spotions.nightshade_seeds": "Nightshade Seeds",
 
   "item.spotions.crystal_ball": "Crystal Ball",
 
   "block.spotions.byrill_ore": "Byrill Ore",
   "block.spotions.deepslate_byrill_ore": "Deepslate Byrill Ore",
+  "block.spotions.nightshade_crop": "Nightshade Crop",
 
   "itemGroup.spotionstab": "Spotions Mod All"
 }

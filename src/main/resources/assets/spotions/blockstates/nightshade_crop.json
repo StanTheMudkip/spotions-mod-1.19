@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": {"model":  "spotions:block/nightshade_stage0"},
+    "age=1": {"model":  "spotions:block/nightshade_stage1"},
+    "age=2": {"model":  "spotions:block/nightshade_stage2"},
+    "age=3": {"model":  "spotions:block/nightshade_stage3"},
+    "age=4": {"model":  "spotions:block/nightshade_stage4"},
+    "age=5": {"model":  "spotions:block/nightshade_stage5"},
+    "age=6": {"model":  "spotions:block/nightshade_stage6"}
+  }
+}

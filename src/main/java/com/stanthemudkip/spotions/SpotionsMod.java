@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.stanthemudkip.spotions.block.ModBlocks;
 import com.stanthemudkip.spotions.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -57,8 +59,7 @@ public class SpotionsMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            //ItemBlockRenderTypes.setRenderLayer(ModBlocks.NIGHTSHADE_CROP.get(), RenderType.cutout()); //DEPRECATED
         }
     }
 }
