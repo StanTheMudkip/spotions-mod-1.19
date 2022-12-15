@@ -3,6 +3,7 @@ package com.stanthemudkip.spotions;
 import com.mojang.logging.LogUtils;
 import com.stanthemudkip.spotions.block.ModBlocks;
 import com.stanthemudkip.spotions.item.ModItems;
+import com.stanthemudkip.spotions.networking.ModMessages;
 import com.stanthemudkip.spotions.world.feature.ModConfiguredFeatures;
 import com.stanthemudkip.spotions.world.feature.ModPlacedFeatures;
 import net.minecraft.world.level.block.Blocks;
@@ -51,6 +52,9 @@ public class SpotionsMod
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+
+        //Register the messages class/system (DO NOT INCLUDE IN "event.enqueueWork" because it might not register properly.
+        ModMessages.register();
     }
 
 

@@ -13,5 +13,8 @@
   "block.spotions.deepslate_byrill_ore": "Deepslate Byrill Ore",
   "block.spotions.nightshade_crop": "Nightshade Crop",
 
-  "itemGroup.spotionstab": "Spotions Mod All"
+  "itemGroup.spotionstab": "Spotions Mod All",
+
+  "key.category.spotions.spotions": "Spotions Mod",
+  "key.spotions.why_not": "Why not find out?"
 }
