@@ -17,8 +17,8 @@ public class ModPlacedFeatures {
     //Ore placement Registry objects
     public static final RegistryObject<PlacedFeature> ZIRCON_ORE_PLACED = PLACED_FEATURES.register("byrill_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.BYRILL_ORE.getHolder().get(),
-                    commonOrePlacement(9, // VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.absolute(-30), VerticalAnchor.absolute(25)))));
+                    commonOrePlacement(20, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.absolute(-30), VerticalAnchor.absolute(30)))));
 
 
     //Ore placements (These are copied from normal minecraft)

@@ -26,7 +26,7 @@ public class ModConfiguredFeatures {
 
     //Registry objects for the lists
     public static final RegistryObject<ConfiguredFeature<?, ?>> BYRILL_ORE = CONFIGURED_FEATURES.register("byrill_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ZIRCON_ORES.get(),4)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ZIRCON_ORES.get(),3))); //Changes how many blocks per vein
 
 
     public static void register(IEventBus eventBus) {
