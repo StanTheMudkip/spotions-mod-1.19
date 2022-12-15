@@ -3,9 +3,8 @@ package com.stanthemudkip.spotions;
 import com.mojang.logging.LogUtils;
 import com.stanthemudkip.spotions.block.ModBlocks;
 import com.stanthemudkip.spotions.item.ModItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import com.stanthemudkip.spotions.world.feature.ModConfiguredFeatures;
+import com.stanthemudkip.spotions.world.feature.ModPlacedFeatures;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,6 +33,10 @@ public class SpotionsMod
         ModItems.register(modEventBus);
         //Register our mod Blocks here
         ModBlocks.register(modEventBus);
+        //Register feature configs here
+        ModConfiguredFeatures.register(modEventBus);
+        //Register placed features here
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
