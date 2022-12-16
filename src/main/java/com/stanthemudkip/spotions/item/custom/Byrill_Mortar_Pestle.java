@@ -3,14 +3,21 @@ package com.stanthemudkip.spotions.item.custom;
 import com.stanthemudkip.spotions.item.ModItems;
 import com.stanthemudkip.spotions.networking.ModMessages;
 import com.stanthemudkip.spotions.networking.packet.Byrill_Mortar_PestleC2SPacket;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class Byrill_Mortar_Pestle extends Item {
     //Default Constructor
@@ -18,12 +25,17 @@ public class Byrill_Mortar_Pestle extends Item {
         super(properties);
     }
 
-    /*
-    @Override
-    public UseAnim getUseAnimation(ItemStack itemStack) {
-        return UseAnim.BOW;
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+        if(Screen.hasShiftDown()) {
+            //If the user presses shift while hovering over the item it will display what we want.
+            components.add(Component.literal("Hold right click to crush the Byrill Gem!").withStyle(ChatFormatting.WHITE));
+        } else {
+            //If the user isn't pressing shift over the item we can display what we want.
+            components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_PURPLE));
+        }
+
+        super.appendHoverText(stack, level, components, flag);
     }
-    */
 
     @Override
     public SoundEvent getEatingSound() {

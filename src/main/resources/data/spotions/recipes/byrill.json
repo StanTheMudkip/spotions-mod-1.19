@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spotions:byrill_mortar_pestle"
+    }
+  ],
+  "result": {
+    "item": "spotions:byrill",
+    "count": 1
+  }
+}
