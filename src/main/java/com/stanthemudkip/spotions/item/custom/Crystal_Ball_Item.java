@@ -11,7 +11,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.fml.DistExecutor;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -30,7 +29,7 @@ public class Crystal_Ball_Item extends Item {
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown()) {
             //If the user presses shift while hovering over the item it will display what we want.
-            components.add(Component.literal("Right click to get your fortune of the day! (In Minecraft Days or 24000 ticks)").withStyle(ChatFormatting.WHITE));
+            components.add(Component.literal("Right click to get your fortune of the day! (In Minecraft Days or 24000 ticks)").withStyle(ChatFormatting.GRAY));
         } else {
             //If the user isn't pressing shift over the item we can display what we want.
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_PURPLE));
