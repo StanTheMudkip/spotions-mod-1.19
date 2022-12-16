@@ -53,8 +53,11 @@ public class SpotionsMod
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
 
-        //Register the messages class/system (DO NOT INCLUDE IN "event.enqueueWork" because it might not register properly.
-        ModMessages.register();
+        event.enqueueWork(() -> {
+            //Register the Mod Messages (Should be the first thing here
+            ModMessages.register();
+        });
+
     }
 
 
