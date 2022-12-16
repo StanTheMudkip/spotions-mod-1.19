@@ -42,9 +42,7 @@ public class ModItems {
 
     //Mortar_Pestle Items
     public static final RegistryObject<Item> BYRILL_MORTAR_PESTLE = ITEMS.register("byrill_mortar_pestle",
-            () -> {
-                return new Byrill_Mortar_Pestle(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB).food(new FoodProperties.Builder().nutrition(0).saturationMod(0).alwaysEat().build()));
-            });
+            () -> new Byrill_Mortar_Pestle(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB).craftRemainder(ModItems.MORTAR_PESTLE.get().getDefaultInstance().getItem()).food(new FoodProperties.Builder().nutrition(0).saturationMod(0).alwaysEat().build())));
 
 
     public static void register(IEventBus eventBus) {
