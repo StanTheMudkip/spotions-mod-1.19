@@ -1,6 +1,7 @@
 package com.stanthemudkip.spotions.networking;
 
 import com.stanthemudkip.spotions.SpotionsMod;
+import com.stanthemudkip.spotions.networking.packet.Byrill_Mortar_PestleC2SPacket;
 import com.stanthemudkip.spotions.networking.packet.ExampleC2SPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -32,6 +33,12 @@ public class ModMessages {
                 .decoder(ExampleC2SPacket::new)
                 .encoder(ExampleC2SPacket::toBytes)
                 .consumerMainThread(ExampleC2SPacket::handler)
+                .add();
+
+        net.messageBuilder(Byrill_Mortar_PestleC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
+                .decoder(Byrill_Mortar_PestleC2SPacket::new)
+                .encoder(Byrill_Mortar_PestleC2SPacket::toBytes)
+                .consumerMainThread(Byrill_Mortar_PestleC2SPacket::handler)
                 .add();
     }
 

@@ -1,6 +1,8 @@
 package com.stanthemudkip.spotions.item.custom;
 
 import com.stanthemudkip.spotions.item.ModItems;
+import com.stanthemudkip.spotions.networking.ModMessages;
+import com.stanthemudkip.spotions.networking.packet.Byrill_Mortar_PestleC2SPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -38,7 +40,8 @@ public class Byrill_Mortar_Pestle extends Item {
         if( player != null && !level.isClientSide()) {
             //**(TO DO)** Will want to check if the player's inventory is full, then spawn the item entity on the player coordinates.
             //Add the byrill dust to their inventory
-            player.getInventory().add(itemStack2);
+            ModMessages.sendToServer(new Byrill_Mortar_PestleC2SPacket());
+
         }
 
         return super.finishUsingItem(itemStack1, level, entity);
