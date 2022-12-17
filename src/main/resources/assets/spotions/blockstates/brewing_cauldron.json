@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "spotions:block/brewing_cauldron"
+    },
+    "facing=south": {
+      "model": "spotions:block/brewing_cauldron",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spotions:block/brewing_cauldron",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "spotions:block/brewing_cauldron",
+      "y": 90
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package com.stanthemudkip.spotions.block;
 
 import com.stanthemudkip.spotions.SpotionsMod;
+import com.stanthemudkip.spotions.block.custom.BrewingCauldron;
 import com.stanthemudkip.spotions.block.custom.NightShadeCropBlock;
 import com.stanthemudkip.spotions.item.ModCreativeModeTab;
 import com.stanthemudkip.spotions.item.ModItems;
@@ -38,6 +39,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> NIGHTSHADE_CROP = BLOCKS.register("nightshade_crop",
             () -> new NightShadeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> BREWING_CAULDRON = registerBlock("brewing_cauldron",
+            () -> new BrewingCauldron(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.SPOTIONS_TAB);
 
 
 
