@@ -4,6 +4,7 @@ import com.stanthemudkip.spotions.SpotionsMod;
 import com.stanthemudkip.spotions.block.ModBlocks;
 import com.stanthemudkip.spotions.item.custom.Crystal_Ball_Item;
 import com.stanthemudkip.spotions.item.custom.Mortar_Pestle_Crystal;
+import com.stanthemudkip.spotions.item.custom.SFlaskItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -28,6 +29,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB)));
     public static final RegistryObject<Item> EMPTY_FLASK = ITEMS.register("empty_flask",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> LEVITATION_FLASK = ITEMS.register("levitation_flask",
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+
     public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
     public static final RegistryObject<Item> NIGHTSHADE_SEEDS = ITEMS.register("nightshade_seeds",

@@ -2,8 +2,10 @@ package com.stanthemudkip.spotions;
 
 import com.mojang.logging.LogUtils;
 import com.stanthemudkip.spotions.block.ModBlocks;
+import com.stanthemudkip.spotions.effect.ModEffects;
 import com.stanthemudkip.spotions.item.ModItems;
 import com.stanthemudkip.spotions.networking.ModMessages;
+import com.stanthemudkip.spotions.potion.ModPotions;
 import com.stanthemudkip.spotions.world.feature.ModConfiguredFeatures;
 import com.stanthemudkip.spotions.world.feature.ModPlacedFeatures;
 import net.minecraft.world.level.block.Blocks;
@@ -38,6 +40,11 @@ public class SpotionsMod
         ModConfiguredFeatures.register(modEventBus);
         //Register placed features here
         ModPlacedFeatures.register(modEventBus);
+        //Register Mod Effects here
+        ModEffects.register(modEventBus);
+
+        //Register Mod Potions here
+        ModPotions.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
