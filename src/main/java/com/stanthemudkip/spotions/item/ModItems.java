@@ -10,6 +10,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,6 +40,10 @@ public class ModItems {
     public static final RegistryObject<Item> NIGHTSHADE_BERRY = ITEMS.register("nightshade_berry",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB).food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).effect(
                     () -> new MobEffectInstance(MobEffects.POISON, 140, 0), 0.95f).build() )));
+
+    //Tools
+    public static final RegistryObject<Item> BYRILL_ENFORCED_PICKAXE = ITEMS.register("byrill_enforced_pickaxe",
+            () -> new PickaxeItem(ModTiers.BYRILL_ENFORCED, 1, -2.6f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
 
     //Custom Items
     public static final RegistryObject<Item> CRYSTAL_BALL = ITEMS.register("crystal_ball",

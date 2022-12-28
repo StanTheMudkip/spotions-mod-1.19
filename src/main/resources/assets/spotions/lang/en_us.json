@@ -7,6 +7,8 @@
   "item.spotions.nightshade_berry": "Nighshade Berry",
   "item.spotions.nightshade_seeds": "Nightshade Seeds",
 
+  "item.spotions.byrill_enforced_pickaxe": "Byrill Enforced Diamond Pickaxe",
+
   "item.spotions.crystal_ball": "Crystal Ball",
 
   "block.spotions.byrill_ore": "Byrill Ore",
@@ -18,13 +20,23 @@
   "itemGroup.spotionstab": "Spotions Mod All",
 
 
-  "item.minecraft.potion.effect.levitation_potion": "Potion Levitation",
+
+
+  "item.minecraft.potion.effect.levitation_potion": "Potion of Levitation",
   "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
   "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
 
   "item.minecraft.potion.effect.long_levitation_potion": "Potion of Levitation",
   "item.minecraft.splash_potion.effect.long_levitation_potion": "Splash Potion of Levitation",
   "item.minecraft.lingering_potion.effect.long_levitation_potion": "Lingering Potion of Levitation",
+
+  "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
+  "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
+
+  "item.minecraft.potion.effect.long_hunger_potion": "Potion of Hunger",
+  "item.minecraft.splash_potion.effect.long_hunger_potion": "Splash Potion of Hunger",
+  "item.minecraft.lingering_potion.effect.long_hunger_potion": "Lingering Potion of Hunger",
 
 
   "key.category.spotions.spotions": "Spotions Mod",

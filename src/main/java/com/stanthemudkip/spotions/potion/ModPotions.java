@@ -19,6 +19,12 @@ public class ModPotions {
     public static final RegistryObject<Potion> LONG_LEVITATION_POTION = POTIONS.register("long_levitation_potion",
             () -> new Potion( new MobEffectInstance(MobEffects.LEVITATION, 300, 0 )));
 
+    public static final RegistryObject<Potion> HUNGER_POTION = POTIONS.register("hunger_potion",
+            () -> new Potion( new MobEffectInstance(MobEffects.HUNGER, 400, 0 )));
+
+    public static final RegistryObject<Potion> LONG_HUNGER_POTION = POTIONS.register("long_hunger_potion",
+            () -> new Potion( new MobEffectInstance(MobEffects.HUNGER, 600, 0 )));
+
 
     public static void register(IEventBus event) {
         POTIONS.register(event);
