@@ -12,15 +12,15 @@ import net.minecraftforge.network.NetworkEvent;
 
 import java.util.function.Supplier;
 
-public class Mortar_Pestle_ItemC2SPacket {
+public class M_P_Byrill_DustC2SPacket {
 
     //Packet constructor
-    public Mortar_Pestle_ItemC2SPacket() {
+    public M_P_Byrill_DustC2SPacket() {
 
     }
 
 
-    public Mortar_Pestle_ItemC2SPacket(FriendlyByteBuf buf) {
+    public M_P_Byrill_DustC2SPacket(FriendlyByteBuf buf) {
 
     }
 
@@ -38,20 +38,13 @@ public class Mortar_Pestle_ItemC2SPacket {
 
             //This will contain the item  (set to BYRILL_DUST but default)
             ItemStack itemStack1 = new ItemStack(ModItems.BYRILL_DUST.get().getDefaultInstance().getItem(), 1);
-            //This will contain the item entity that we will spawn on the player
-            ItemEntity itemEntity;
 
-            //Detect which Item this is
-            if(player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModItems.BYRILL_MORTAR_PESTLE.get()) {
-                //Set the item to be added to BYRILL_DUST
-                itemStack1 = new ItemStack(ModItems.BYRILL_DUST.get().getDefaultInstance().getItem(), 1);
-                //Play the sounds
-                level.playSound(null, player.getOnPos(), SoundEvents.LARGE_AMETHYST_BUD_BREAK , SoundSource.PLAYERS,
-                        0.5f,level.random.nextFloat() * 0.1f + 0.9f);
-            }
+            //Play the sounds
+            level.playSound(null, player.getOnPos(), SoundEvents.LARGE_AMETHYST_BUD_BREAK , SoundSource.PLAYERS,
+                    0.5f,level.random.nextFloat() * 0.1f + 0.9f);
 
             //Spawn the item on the player
-            itemEntity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), itemStack1);
+            ItemEntity itemEntity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), itemStack1);
             itemEntity.setPickUpDelay(0);
             level.addFreshEntity(itemEntity);
         });

@@ -3,9 +3,11 @@
   "item.spotions.byrill_dust": "Byrill Dust",
   "item.spotions.empty_flask": "Empty Flask",
   "item.spotions.mortar_pestle": "Mortar and Pestle",
-  "item.spotions.byrill_mortar_pestle": "Mortar and Pestle with Byrill",
   "item.spotions.nightshade_berry": "Nighshade Berry",
   "item.spotions.nightshade_seeds": "Nightshade Seeds",
+  "item.spotions.nightshade_paste": "Nightshade Paste",
+  "item.spotions.byrill_mortar_pestle": "Mortar and Pestle with Byrill",
+  "item.spotions.nightshade_mortar_pestle": "Mortar and Pestle with Nightshade Berry",
 
   "item.spotions.byrill_enforced_pickaxe": "Byrill Enforced Diamond Pickaxe",
   "item.spotions.byrill_enforced_axe": "Byrill Enforced Diamond Axe",

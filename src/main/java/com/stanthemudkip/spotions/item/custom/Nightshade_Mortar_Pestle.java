@@ -2,7 +2,7 @@ package com.stanthemudkip.spotions.item.custom;
 
 import com.stanthemudkip.spotions.item.ModItems;
 import com.stanthemudkip.spotions.networking.ModMessages;
-import com.stanthemudkip.spotions.networking.packet.Mortar_Pestle_ItemC2SPacket;
+import com.stanthemudkip.spotions.networking.packet.M_P_Nightshade_PasteC2SPacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
@@ -18,9 +18,9 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class Mortar_Pestle_Crystal extends Item {
+public class Nightshade_Mortar_Pestle extends Item {
     //Default Constructor
-    public Mortar_Pestle_Crystal(Properties properties) {
+    public Nightshade_Mortar_Pestle(Properties properties) {
         super(properties);
     }
 
@@ -37,7 +37,7 @@ public class Mortar_Pestle_Crystal extends Item {
     }
 
     @Override
-    public SoundEvent getEatingSound() {return SoundEvents.AMETHYST_CLUSTER_HIT;}
+    public SoundEvent getEatingSound() {return SoundEvents.CROP_PLANTED;}
 
     @Override
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
@@ -48,7 +48,7 @@ public class Mortar_Pestle_Crystal extends Item {
         if( player != null && !level.isClientSide()) {
             //**(TO DO)** Will want to check if the player's inventory is full, then spawn the item entity on the player coordinates.
             //Add the byrill dust to their inventory
-            ModMessages.sendToServer(new Mortar_Pestle_ItemC2SPacket());
+            ModMessages.sendToServer(new M_P_Nightshade_PasteC2SPacket());
 
         }
 

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spotions:nightshade_mortar_pestle"
+    }
+  ],
+  "result": {
+    "item": "spotions:nightshade_berry",
+    "count": 1
+  }
+}

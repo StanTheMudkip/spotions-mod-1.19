@@ -3,8 +3,8 @@ package com.stanthemudkip.spotions.item;
 import com.stanthemudkip.spotions.SpotionsMod;
 import com.stanthemudkip.spotions.block.ModBlocks;
 import com.stanthemudkip.spotions.item.custom.Crystal_Ball_Item;
-import com.stanthemudkip.spotions.item.custom.Mortar_Pestle_Crystal;
-import com.stanthemudkip.spotions.item.custom.SFlaskItem;
+import com.stanthemudkip.spotions.item.custom.Byrill_Mortar_Pestle;
+import com.stanthemudkip.spotions.item.custom.Nightshade_Mortar_Pestle;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -37,6 +37,10 @@ public class ModItems {
     public static final RegistryObject<Item> NIGHTSHADE_BERRY = ITEMS.register("nightshade_berry",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB).food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).effect(
                     () -> new MobEffectInstance(MobEffects.POISON, 140, 0), 0.95f).build() )));
+    public static final RegistryObject<Item> NIGHTSHADE_PASTE = ITEMS.register("nightshade_paste",
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON).stacksTo(64).tab(ModCreativeModeTab.SPOTIONS_TAB).food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).effect(
+                    () -> new MobEffectInstance(MobEffects.POISON, 280, 0), 0.95f).build() )));
+
 
     //Tools
     public static final RegistryObject<Item> BYRILL_ENFORCED_PICKAXE = ITEMS.register("byrill_enforced_pickaxe",
@@ -56,8 +60,9 @@ public class ModItems {
 
     //Mortar_Pestle Items
     public static final RegistryObject<Item> BYRILL_MORTAR_PESTLE = ITEMS.register("byrill_mortar_pestle",
-            () -> new Mortar_Pestle_Crystal(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB).craftRemainder(ModItems.MORTAR_PESTLE.get().getDefaultInstance().getItem()).food(new FoodProperties.Builder().nutrition(0).saturationMod(0).alwaysEat().build())));
-
+            () -> new Byrill_Mortar_Pestle(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB).craftRemainder(ModItems.MORTAR_PESTLE.get().getDefaultInstance().getItem()).food(new FoodProperties.Builder().nutrition(0).saturationMod(0).alwaysEat().build())));
+    public static final RegistryObject<Item> NIGHTSHADE_MORTAR_PESTLE = ITEMS.register("nightshade_mortar_pestle",
+            () -> new Nightshade_Mortar_Pestle(new Item.Properties().rarity(Rarity.COMMON).stacksTo(1).tab(ModCreativeModeTab.SPOTIONS_TAB).craftRemainder(ModItems.MORTAR_PESTLE.get().getDefaultInstance().getItem()).food(new FoodProperties.Builder().nutrition(0).saturationMod(0).alwaysEat().build())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

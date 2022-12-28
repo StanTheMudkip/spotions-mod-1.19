@@ -1,8 +1,9 @@
 package com.stanthemudkip.spotions.networking;
 
 import com.stanthemudkip.spotions.SpotionsMod;
-import com.stanthemudkip.spotions.networking.packet.Mortar_Pestle_ItemC2SPacket;
+import com.stanthemudkip.spotions.networking.packet.M_P_Byrill_DustC2SPacket;
 import com.stanthemudkip.spotions.networking.packet.ExampleC2SPacket;
+import com.stanthemudkip.spotions.networking.packet.M_P_Nightshade_PasteC2SPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -35,10 +36,16 @@ public class ModMessages {
                 .consumerMainThread(ExampleC2SPacket::handler)
                 .add();
 
-        net.messageBuilder(Mortar_Pestle_ItemC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
-                .decoder(Mortar_Pestle_ItemC2SPacket::new)
-                .encoder(Mortar_Pestle_ItemC2SPacket::toBytes)
-                .consumerMainThread(Mortar_Pestle_ItemC2SPacket::handler)
+        net.messageBuilder(M_P_Byrill_DustC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
+                .decoder(M_P_Byrill_DustC2SPacket::new)
+                .encoder(M_P_Byrill_DustC2SPacket::toBytes)
+                .consumerMainThread(M_P_Byrill_DustC2SPacket::handler)
+                .add();
+
+        net.messageBuilder(M_P_Nightshade_PasteC2SPacket.class, id(), NetworkDirection.PLAY_TO_SERVER)
+                .decoder(M_P_Nightshade_PasteC2SPacket::new)
+                .encoder(M_P_Nightshade_PasteC2SPacket::toBytes)
+                .consumerMainThread(M_P_Nightshade_PasteC2SPacket::handler)
                 .add();
     }
 
