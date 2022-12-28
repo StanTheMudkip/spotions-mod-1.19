@@ -6,10 +6,15 @@ import com.stanthemudkip.spotions.effect.ModEffects;
 import com.stanthemudkip.spotions.item.ModItems;
 import com.stanthemudkip.spotions.networking.ModMessages;
 import com.stanthemudkip.spotions.potion.ModPotions;
+import com.stanthemudkip.spotions.util.ModBrewingRecipe;
 import com.stanthemudkip.spotions.world.feature.ModConfiguredFeatures;
 import com.stanthemudkip.spotions.world.feature.ModPlacedFeatures;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -63,6 +68,10 @@ public class SpotionsMod
         event.enqueueWork(() -> {
             //Register the Mod Messages (Should be the first thing here
             ModMessages.register();
+
+            //Potion Recipes
+            BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(Potions.AWKWARD,
+                    Items.ROTTEN_FLESH, ModPotions.HUNGER_POTION.get()));
         });
 
     }
