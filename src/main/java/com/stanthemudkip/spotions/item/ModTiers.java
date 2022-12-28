@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 public enum ModTiers implements Tier {
 
     //The different tiers
-    BYRILL_ENFORCED(3, 1900, 8.5F, 3.5F, 12, () -> {
+    BYRILL_ENFORCED(3, 2400, 8.5F, 3.5F, 12, () -> {
         return Ingredient.of(ModItems.BYRILL_DUST.get());
     });
 
