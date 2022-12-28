@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "D#D",
+    " O "
+  ],
+  "key": {
+    "D": {
+      "item": "spotions:byrill_dust"
+    },
+    "#": {
+      "item": "minecraft:diamond_sword"
+    },
+    "O": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "spotions:byrill_enforced_sword"
+  }
+}

@@ -8,10 +8,7 @@ import com.stanthemudkip.spotions.item.custom.SFlaskItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +41,14 @@ public class ModItems {
     //Tools
     public static final RegistryObject<Item> BYRILL_ENFORCED_PICKAXE = ITEMS.register("byrill_enforced_pickaxe",
             () -> new PickaxeItem(ModTiers.BYRILL_ENFORCED, 1, -2.6f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_ENFORCED_AXE = ITEMS.register("byrill_enforced_axe",
+            () -> new AxeItem(ModTiers.BYRILL_ENFORCED, 5, -3f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_ENFORCED_SHOVEL = ITEMS.register("byrill_enforced_shovel",
+            () -> new ShovelItem(ModTiers.BYRILL_ENFORCED, 1, -2.8f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_ENFORCED_HOE = ITEMS.register("byrill_enforced_hoe",
+            () -> new HoeItem(ModTiers.BYRILL_ENFORCED, 1, 0f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
+    public static final RegistryObject<Item> BYRILL_ENFORCED_SWORD = ITEMS.register("byrill_enforced_sword",
+            () -> new SwordItem(ModTiers.BYRILL_ENFORCED, 3, -2.3f, new Item.Properties().rarity(Rarity.COMMON).stacksTo(16).tab(ModCreativeModeTab.SPOTIONS_TAB)));
 
     //Custom Items
     public static final RegistryObject<Item> CRYSTAL_BALL = ITEMS.register("crystal_ball",
