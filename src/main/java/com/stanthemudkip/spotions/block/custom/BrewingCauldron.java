@@ -27,7 +27,7 @@ public class BrewingCauldron extends HorizontalDirectionalBlock {
 
     //VOXEL SHAPES OF THE BLOCK
     private static final VoxelShape INSIDE = box(2.0D, 4.0D, 2.0D, 14.0D, 16.0D, 14.0D);
-    private static final VoxelShape SHAPE = Shapes.join(Shapes.block(), Shapes.or(box(0.0D, 0.0D, 4.0D, 16.0D, 3.0D, 12.0D), box(4.0D, 0.0D, 0.0D, 12.0D, 3.0D, 16.0D), box(2.0D, 0.0D, 2.0D, 14.0D, 3.0D, 14.0D), INSIDE), BooleanOp.ONLY_FIRST);
+    private static final VoxelShape SHAPE = Shapes.join(box(0.0D,0.0D,0.0D, 16.0D, 15.0D, 16.0D), Shapes.or(box(0.0D, 0.0D, 4.0D, 16.0D, 2.0D, 12.0D), box(4.0D, 0.0D, 0.0D, 12.0D, 2.0D, 16.0D), box(2.0D, 0.0D, 2.0D, 14.0D, 2.0D, 14.0D), INSIDE), BooleanOp.ONLY_FIRST);
 
     @Override
     public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
