@@ -3,6 +3,7 @@
 	"render_type": "cutout",
 	"texture_size": [32, 32],
 	"textures": {
+		"particle": "minecraft:block/cauldron_side",
 		"1": "spotions:block/bc_base",
 		"3": "spotions:block/bc_sideshort",
 		"4": "spotions:block/bc_foot1",
